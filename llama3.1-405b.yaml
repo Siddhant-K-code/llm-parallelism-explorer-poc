@@ -1,0 +1,17 @@
+model:
+  name: "LLaMA-3.1 405B"
+  global_batch_size: 4096
+  micro_batch_size: 1
+  vocab_size: 128256
+  num_layers: 126
+  hidden_size: 16384
+  num_attention_heads: 128
+  num_key_value_heads: 8
+  ffn_hidden_size: 53248
+  seq_length: 8192
+  activation: "swiglu"
+  share_embeddings_and_output_weights: False
+trainer:
+  data_parallel_sharding_strategy: "OPTIMIZER_STATES"
+  param_dtype: "float16"
+  grad_dtype: "float32"

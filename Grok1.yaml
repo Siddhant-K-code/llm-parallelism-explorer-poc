@@ -1,0 +1,19 @@
+model:
+  name: "Grok1"
+  global_batch_size: 2048
+  micro_batch_size: 1
+  vocab_size: 32000
+  num_layers: 64
+  hidden_size: 6144
+  ffn_hidden_size: 12288
+  seq_length: 8192
+  activation: "glu"
+  moe:
+    expert_frequency: 1.
+    k: 2
+    num_experts: 8
+    token_imbalance_hypothesis: 1.0
+trainer:
+  data_parallel_sharding_strategy: "OPTIMIZER_STATES"
+  param_dtype: "float16"
+  grad_dtype: "float32"
