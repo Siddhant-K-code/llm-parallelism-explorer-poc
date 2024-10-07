@@ -53,9 +53,8 @@ The script generates memory_estimation.csv with comprehensive memory estimations
 - Expert and non-expert parameters
 - Component-specific activation memory
 
-## Visualization
+<img width="1482" alt="image" src="https://github.com/user-attachments/assets/bf0c732f-8fe2-4929-9f3d-34369bc2e72f">
 
-This visualization of memory estimation results helps identify optimal configurations at a glance.
 
 ## Credits
 
